@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
 
-  // Nomes das Variaveis
+  // Nomes das variaveis
 char estado1[3];
 char codigo1[50];
 char nome1[50];
@@ -32,14 +32,19 @@ scanf("%f", &pib1);
 printf("Digite o Numero de Pontos Turisticos: \n");
 scanf("%d", &numero1);
 
+printf("\n-------------------------\n\n");
+
 //Imprimir os dados preenchidos
+printf("CARTA 01\n");
 printf("Estado: %s\n", estado1);
-printf("Código: %s%s\n", estado1, codigo1);
+printf("Código: %s\n", codigo1);
 printf("Nome da Cidade: %s\n", nome1);
 printf("População: %d mil habitantes\n", populacao1);
 printf("Área: %.2f km²\n", area1);
 printf("PIB: %.2f bilhões de reais\n", pib1);
 printf("Numero de Pontos Turisticos: %d\n", numero1);
+
+printf("\n---------------------------------\n\n");
 
           // Nomes das Variaveis
           char estado2[3];
@@ -72,15 +77,19 @@ printf("Numero de Pontos Turisticos: %d\n", numero1);
           printf("Digite o Numero de Pontos Turisticos: \n");
           scanf("%d", &numero2);
 
+          printf("\n-------------------------\n\n");
+
           //Imprimir os dados preenchidos
-          printf("CARTA 02");
+          printf("CARTA 02\n");
           printf("Estado: %s\n", estado2);
-          printf("Código: %s%s\n", estado2, codigo2);
+          printf("Código: %s\n", codigo2);
           printf("Nome da Cidade: %s\n", nome2);
           printf("População: %d mil habitantes\n", populacao2);
           printf("Área: %.2f km²\n", area2);
           printf("PIB: %.2f bilhões de reais\n", pib2);
           printf("Numero de Pontos Turisticos: %d\n", numero2);
+
+          printf("\n-------------------------\n\n");
 
 
 return 0;
