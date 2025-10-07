@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main() {
 
+// JOGO CARTA SUPER TRINFO
+
 // Nomes das variaveis carta 01
 char estado1[3];
 char codigo1[50];
@@ -49,7 +51,6 @@ printf("\n-------------------------\n\n");
         printf("Área: %.2f km²\n", area1);
         printf("PIB: %.2f bilhões de reais\n", pib1);
         printf("Numero de Pontos Turisticos: %d\n", numero1);
-        printf("Densidade Populacional: %.2f\n", densidade1);
         printf("PIB per capita: %.2f\n", percapita1);
         printf("Super Poder: %.2f\n", superpoder1);
 
@@ -108,8 +109,8 @@ printf("\n-------------------------\n\n");
 
                         printf("\n-------------------------\n\n");
 
-
-                                // impressão do resultado final
+                                /*
+                                // impressão do resultado final (Logica Simples de Comparação)
                                 printf("\nRESULTADO CARTA GANHADORA (Carta01 = 1 ou Carta02 = 0)\n\n");
                                 
                                 printf("População: %d\n", populacao1 > populacao2);
@@ -120,7 +121,56 @@ printf("\n-------------------------\n\n");
                                 printf("PIB per capita: %d\n", percapita1 > percapita2);
                                 printf("Super Poder: %d\n\n", superpoder1 > superpoder2);
 
+                                printf("\n-------------------------\n\n");*/
+
+                                // Aplicando Estrutura de Decisão
+                                printf("\n***CARTA VENCEDORA***\n\n");
+
+                                if (populacao1 > populacao2){
+                                printf("População: Vencedor CARTA 01\n");
+                                } else {
+                                printf("População: Vencedor CARTA 02\n");
+                                }
+
+                                if (area1 > area2){
+                                printf("Área: Vencedor CARTA 01\n");
+                                } else {
+                                printf("Área: Vencedor CARTA 02\n");
+                                }
+
+                                if (pib1 > pib2){
+                                printf("PIB: Vencedor CARTA 01\n");
+                                } else {
+                                printf("PIB: Vencedor CARTA 02\n");
+                                }
+
+                                if (numero1 > numero2){
+                                printf("Pontos Turisticos: Vencedor CARTA 01\n");
+                                } else {
+                                printf("Pontos Turisticos: Vencedor CARTA 02\n");
+                                }
+
+                                if (densidade1 < densidade2){
+                                printf("Densidade Populacional: Vencedor CARTA 01\n");
+                                } else {
+                                printf("Densidade Populacional: Vencedor CARTA 02\n");
+                                }
+
+                                if (percapita1 > percapita2){
+                                printf("PIB Per Capita: Vencedor CARTA 01\n");
+                                } else {
+                                printf("PIB Per Capita: Vencedor CARTA 02\n");
+                                }
+
+                                if (superpoder1 > superpoder2){
+                                printf("Super Poder: Vencedor CARTA 01\n");
+                                } else {
+                                printf("Super Poder: Vencedor CARTA 02\n");
+                                }
+
                                 printf("\n-------------------------\n\n");
+
+                                
 
 
 return 0;
